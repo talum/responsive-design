@@ -1,0 +1,282 @@
+body{
+  margin:0;
+  padding:0;
+}
+
+ul{
+  list-style: none;
+  margin:0;
+  padding:0;
+}
+
+h1{
+  font-family: Georgia, Times, 'Times New Roman', serif;
+}
+h2{
+  margin-top: 0em;
+  margin-bottom: 0;
+  padding-bottom:0;
+  font-size: 1.6em;
+  letter-spacing: -1px;
+  font-weight: 700;
+}
+
+h3{
+  margin-top: 1em;
+  font-family: Arial;
+  font-size: 0.8em;
+  margin-bottom: 0;
+}
+
+h2 + p{
+  font-family: Georgia, Times, 'Times New Roman', serif;
+  font-size: 0.9em;
+  font-weight: 300;
+  line-height: 1.2em;
+  color:#333;
+}
+
+h3 + p{
+  margin-top: 0;
+  font-family:Arial;
+  font-size:0.8em;
+  color:#333;
+  font-weight: 300;
+  padding-bottom:1em;
+}
+
+h4{
+  font-family:Georgia, Times, 'Times New Roman', serif;
+  font-size:1.2em;
+}
+
+.right-col-item > p{
+  font-family: Georgia, Times, 'Times New Roman', serif;
+  font-size:0.8em;
+}
+
+.category{
+  font-family: Arial;
+  font-size:1em;
+  font-weight: 700;
+  text-transform: uppercase;
+  color:#4fbcf1;
+  margin-bottom: 0;
+}
+
+.kicker{
+  font-family: Arial;
+  font-size:0.8em;
+  font-weight: bold;
+  text-transform: uppercase;
+  color:#1f638a;
+  margin-bottom: 0;
+}
+
+.author{
+  font-family: Arial;
+  font-size:0.7em;
+  color:#A8A8A8;
+}
+.subscribe-headline{
+  font-family: Arial;
+  font-size: 1.3em;
+}
+.wrapper {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-flow: row wrap;
+  flex-flow: row wrap;
+  font-weight: bold;
+  text-align: center;
+  border-bottom: 1px solid #ccc;
+}
+
+.wrapper > * {
+  padding: 10px;
+  flex: 1 100%;
+}
+
+.header{
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-flow: column wrap;
+  flex-flow: column wrap;
+  padding: 0;
+}
+
+.navigation {
+  border-top: 1px solid black;
+  border-bottom:1px solid black;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-flow: column wrap;
+  flex-flow: column wrap;
+  padding: 0;
+}
+
+.navigation a{
+  font-family: Arial;
+  font-weight: bold;
+  text-decoration: none;
+  text-transform: uppercase;
+  display:block;
+  padding: 1em;
+  color:black;
+}
+
+.navigation a:hover{
+  background: #CCC;
+}
+
+.footer {
+}
+
+.main {
+  text-align: left;
+  background: white;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-flow: column wrap;
+  flex-flow: column wrap;
+  align-items: stretch;
+}
+
+.featuredItem{
+  min-height: 100px;
+  min-width:100px;
+  text-align:left;
+  flex: 1;
+  padding: 10px;
+  align-self: flex-start;
+}
+
+.featuredItem-full{
+  flex: 2 100%;
+  padding:10px;
+  text-align:left;
+  border-bottom: 1px #CCC solid;
+  border-top: 1px #CCC solid;
+}
+
+.aside-1 {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-flow: column wrap;
+  flex-flow: column wrap;
+  justify-content:space-around;
+}
+
+.feedItem{
+  flex:1;
+  text-align:left;
+  border-bottom:1px solid #E8E8E8;
+}
+
+.feedItem:first-of-type{
+  flex:1;
+  text-align:left;
+  border-top:1px solid #E8E8E8;
+}
+
+.feedItem:last-of-type{
+  flex:1;
+  text-align:left;
+  border-bottom:0px;
+}
+
+.stories {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-flow: row wrap;
+  flex-flow: row wrap;
+}
+
+.right-col-item{
+  flex: 1;
+}
+
+.ad-slot{
+  background: #ccc;
+}
+
+@media all and (min-width: 600px) {
+  .aside {
+    flex: 1;
+  }
+  .navigation{
+    justify-content: flex-start;
+    -webkit-flex-flow: row wrap;
+  }
+  body{
+    padding:0;
+    margin:0;
+  }
+}
+@media all and (min-width: 800px) {
+  .main {
+    flex: 4 0px;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-flow: row wrap;
+    justify-content: space-around;
+  }
+  .navigation{
+    justify-content: flex-start;
+    -webkit-flex-flow: row wrap;
+  }
+
+  .aside-1 {
+    order: 1;
+    border-right:1px #CCC solid;
+  }
+
+  .main {
+    order: 2;
+    border-right:1px #CCC solid;
+  }
+
+  .featuredItem{
+    padding:5px;
+    min-height:100px;
+    min-width:250px;
+    margin: auto;
+  }
+
+  .aside-2 {
+    order: 3;
+    flex: 2;
+  }
+  .ad-slot{
+    min-height:600px;
+  }
+
+  .footer {
+    order: 4;
+  }
+  body{
+    margin-left:4em;
+    margin-right:4em;
+  }
+}
