@@ -5,9 +5,15 @@ body{
 }
 
 ul{
-  list-style: none;
   margin:0;
   padding:0;
+}
+
+ul{
+  list-style: none;
+}
+ol{
+  text-align: left;
 }
 
 h1{
@@ -56,6 +62,17 @@ h4{
   font-size:0.8em;
 }
 
+.logo{
+  margin-bottom: 0px;
+}
+
+.popular-head{
+  font-family: Georgia, Times, 'Times New Roman', serif;
+  font-size: 1.3em;
+  text-transform: uppercase;
+  text-align: left;
+  margin-bottom: 1em;
+}
 .category{
   font-family: Arial;
   font-size:1em;
@@ -142,11 +159,11 @@ h4{
 .footer {
 }
 
-#featured{
+.flex-4{
   flex:4;
 }
 
-.main {
+.main{
   text-align: left;
   background: white;
   display: -webkit-box;
@@ -156,7 +173,6 @@ h4{
   display: flex;
   -webkit-flex-flow: column wrap;
   flex-flow: column wrap;
-  align-items: stretch;
 }
 
 .featuredItem{
@@ -180,7 +196,7 @@ h4{
   border-top: 0px #CCC solid;
 }
 
-.aside-1 {
+#feed-items{
   display: -webkit-box;
   display: -moz-box;
   display: -ms-flexbox;
@@ -188,7 +204,7 @@ h4{
   display: flex;
   -webkit-flex-flow: column wrap;
   flex-flow: column wrap;
-  justify-content:space-around;
+  justify-content:space-between;
 }
 
 .feedItem{
@@ -227,6 +243,18 @@ h4{
   background: #ccc;
 }
 
+.most-read-right h4, .most-read-right li{
+  text-align: left;
+}
+
+.most-read-right p{
+  font-family: Georgia, Times, 'Times New Roman', serif;
+  font-size: 0.8em;
+  font-weight: 300;
+  line-height: 1.2em;
+  color:#333;
+}
+/* min width 600 */
 @media all and (min-width: 600px) {
   .navigation{
     justify-content: flex-start;
@@ -237,7 +265,13 @@ h4{
     margin:0;
   }
 }
+
+/* min width 800 */
+
 @media all and (min-width: 800px) {
+  ol{
+    padding:2px;
+  }
   .main {
     display: -webkit-box;
     display: -moz-box;
@@ -251,21 +285,40 @@ h4{
     justify-content: flex-start;
     -webkit-flex-flow: row wrap;
   }
-  .aside {
-    flex: 1;
-  }
 
-  .aside-1 {
+  .section-border-right{
+    border-right:1px #CCC solid;
+  }
+  .aside{
+    flex:1;
+  }
+  #feed {
     order: 1;
-    border-right:1px #CCC solid;
+    display:flex;
   }
-
-  .main {
-    border-right:1px #CCC solid;
-  }
-
   #featured{
     order:2;
+    display:flex;
+  }
+  #top-right-col{
+    order: 3;
+  }
+  #most-read{
+    order:4;
+  }
+  #more-stories-liked{
+    order:5;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-flow: column wrap;
+    flex-flow: column wrap;
+    justify-content:around; 
+  }
+  #mid-right-col{
+    order:6;
   }
 
   .featuredItem{
@@ -275,7 +328,6 @@ h4{
     margin: auto;
   }
   .aside-2 {
-    order: 3;
     flex: 2;
   }
   .ad-slot{

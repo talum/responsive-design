@@ -1,68 +1,100 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <title>NY MAG</title>
-  <link rel="stylesheet" type="text/css" href="style.css">
-</head>
-<header>
-  <h1>New York</h1>
-</header>
-<nav id="navigation" class="navigation">
-  <a href="#">News & Politics</a>
-  <a href="#">Entertainment</a>
-  <a href="#">Fashion</a>
-  <a href="#">Restaurants</a>
-  <a href="#">Bars</a>
-  <a href="#">Stores</a>
-  <a href="#">THE MAGAZINE</a>
-</nav>
+  <head>
+    <title>NY MAG</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+  <header>
+    <h1 class="logo">New York</h1>
+  </header>
+  <nav id="navigation" class="navigation">
+    <a href="#">News & Politics</a>
+    <a href="#">Entertainment</a>
+    <a href="#">Fashion</a>
+    <a href="#">Restaurants</a>
+    <a href="#">Bars</a>
+    <a href="#">Stores</a>
+    <a href="#">THE MAGAZINE</a>
+  </nav>
 
-<body>
-  <section id="page" class="wrapper">
-    <section id="featured">
-      <ul class="main">
-        <li class="featuredItem-full"><p class="kicker">THE LEAD</p><h2>FINDING RAFFI</h2><p>The wondrous -- and occasionally weird -- relationship between the children's-music superstar, his fans, and the man he used to be.</p>
-        <span class="author">By Sheila Heti</span></li>
-        <li class="featuredItem"><p class="kicker">The National Interest</p><h2>The Right's New Climate-Change Argument</h2><p>First conservatives didn't believe in warming. Now they say Paris can't stop it.</p>
-        <span class="author">By Jonathan Chait</span></li>
-        <li class="featuredItem"><p class="kicker">The Science of Us</p><h2>The Downside of Feeling Trusted by Your Boss at Work</h2><p>It's great to feel competent, but it can also pile on the pressure and lead to burnout.</p><span class="author">By Jesse Singal</span></li>
-        <li class="featuredItem-full"><p class="category">Blockbusters</p><h2>Every Parallel Between the Original Star Wars Trilogy and <em> Force Awakens</em></h2></li>
-        <li class="featuredItem"><p class="kicker">Jet Set</p><h2>Help, I'm Addicted to Frequent-Flier Miles</h2><p>Turn air travel into a game.</p></li>
-        <li class="featuredItem"><h2>Watch <em>The Santa Clause</em> Become Truly Horrifying</h2><p>Our latest Vulture Remix is ho, ho, horror.</p><span class="author">By Diane Bullock and Mike Schuster</span></li>
-        <li class="featuredItem"><h2>Astrology GIFS for the Week of December 21</h2></li>
-        <li class="featuredItem"><h2>Let's Discuss the Ending of <em>Star Wars: The Force Awakens</em></h2></li>
-      </ul>
+  <body>
+    <section id="above-the-fold" class="wrapper">
+      <section id="featured" class="flex-4 section-border-right">
+        <ul class="main">
+          <li class="featuredItem-full"><p class="kicker">THE LEAD</p><h2>Palaces and Parties With the Young Jet Set</h2><p>48 Hours in Gstaad with the next generation of global elite.</p>
+          <span class="author">By Maureen O'Connor</span></li>
+          <li class="featuredItem"><p class="kicker">The National Interest</p><h2>The Right's New Climate-Change Argument</h2><p>First conservatives didn't believe in warming. Now they say Paris can't stop it.</p>
+          <span class="author">By Jonathan Chait</span></li>
+          <li class="featuredItem"><p class="kicker">The Science of Us</p><h2>The Downside of Feeling Trusted by Your Boss at Work</h2><p>It's great to feel competent, but it can also pile on the pressure and lead to burnout.</p><span class="author">By Jesse Singal</span></li>
+          <li class="featuredItem-full"><p class="category">Blockbusters</p><h2>Every Parallel Between the Original Star Wars Trilogy and <em> Force Awakens</em></h2></li>
+          <li class="featuredItem"><p class="kicker">Jet Set</p><h2>Help, I'm Addicted to Frequent-Flier Miles</h2><p>Turn air travel into a game.</p></li>
+          <li class="featuredItem"><h2>Watch <em>The Santa Clause</em> Become Truly Horrifying</h2><p>Our latest Vulture Remix is ho, ho, horror.</p><span class="author">By Diane Bullock and Mike Schuster</span></li>
+          <li class="featuredItem"><h2>Astrology GIFS for the Week of December 21</h2></li>
+          <li class="featuredItem"><h2>Let's Discuss the Ending of <em>Star Wars: The Force Awakens</em></h2></li>
+        </ul>
+      </section>
+      
+      <section id="feed" class="aside aside-1 section-border-right">
+        <ul id="feed-items">
+          <h2>Latest News</h2>
+          <li class="feedItem"><h3>Martin Shkreli Ousted As CEO From Second Pharma Company</h3><p>KaloBios terminated the recently arrested "pharma bro" who's now saying he was only acting like an awful person as part of a "social experiment."</p></li>
+          <li class="feedItem"><h3>Reports: Panthers Wielded Bat and Threatened Odell Beckham Jr., Who's Been Suspended for One Game</h3><p>This story has taken a weird turn.</p></li>
+          <li class="feedItem"><h3>Chelsea Clinton Is Pregnant Again</h3><p>She's got a little campaign talking point in the oven.</p></li>
+          <li class="feedItem"><h3>Jerry Seinfeld Nabs President Obama As a Guest on <em>Comedians in Cars Getting Coffee</em></h3><p>What will POTUS do next?</p></li>
+          <li class="feedItem"><h3>Bill Cosby Sues Beverly Johnson for Saying He Drugged Her</h3><p>Cosby claims Johnson has accused him for fame.</p></li>
+        </ul>
+      </section>
+
+      <section id="top-right-col" class="aside-2">
+        <ul class="stories">
+          <li class="right-col-item"><h4>Why Everyone (in Congress) Hates Ted Cruz</h4><p>Even GOP colleagues can't stand him.</p></li>
+          <li class="right-col-item"><h4>The Critics</h4><p>The 10 Best Lists of 2015</p><p>Applauding Mann's <em>Heat</em></p></li>
+        </ul>
+        <section class="ad-slot">
+          AD SLOT<br>
+          300x600
+        </section>
+        <section class="subscribe">
+          <p class="subscribe-headline">Subscribe Today</p>
+          <p>Get the latest issue, plus the best of nymag.com in our all-in-one iPad app.</p>
+        </section>
+      </section>
+
     </section>
 
-    <ul id="feed" class="aside aside-1">
-      <h2>Latest News</h2>
-      <li class="feedItem"><h3>Martin Shkreli Ousted As CEO From Second Pharma Company</h3><p>KaloBios terminated the recently arrested "pharma bro" who's now saying he was only acting like an awful person as part of a "social experiment."</p></li>
-      <li class="feedItem"><h3>Reports: Panthers Wielded Bat and Threatened Odell Beckham Jr., Who's Been Suspended for One Game</h3><p>This story has taken a weird turn.</p></li>
-      <li class="feedItem"><h3>Chelsea Clinton Is Pregnant Again</h3><p>She's got a little campaign talking point in the oven.</p></li>
-      <li class="feedItem"><h3>Jerry Seinfeld Nabs President Obama As a Guest on <em>Comedians in Cars Getting Coffee</em></h3><p>What will POTUS do next?</p></li>
-      <li class="feedItem"><h3>Bill Cosby Sues Beverly Johnson for Saying He Drugged Her</h3><p>Cosby claims Johnson has accused him for fame.</p></li>
-    </ul>
+    <section id="most-popular" class="wrapper">
+      <section id="more-stories-liked" class="flex-4">
+        <h3 class="popular-head">More Stories Readers Liked</h3>
+        <ul class="main">
+          <li class="featuredItem-full"><h2>FINDING RAFFI</h2><p>The wondrous -- and occasionally weird -- relationship between the children's-music superstar, his fans, and the man he used to be.</p>
+          <span class="author">By Sheila Heti</span></li>
+           <li class="featuredItem-full"><h2>The Right's New Favorite Climate-Change Argument</h2><p>Conservatives were sure that global warming wasn't real. Now they say the Paris agreement can't stop it.</p>
+        </ul>
+      </section>
+      <section id="most-read" class="aside aside-1">
+        <h3 class="popular-head">Most Read</h3>
+        <ol>
+          <li>SNL's 'Meet Your Second Wife' Is Too Real</li>
+          <li>Watch Amy Poehler and Tia Fey Save the Word 'Squad'</li>
+          <li>Trump Gets Bored With Hillary Feud, Ratchets Up the Sexism</li>
+          <li>Why Isn't Marco Rubio Winning? 5 Theories</li>
+          <li>Report: Harrison Ford Was Paid More Than 50 Times More Thank His Force Awakens Co-Stars</li>
+          <li>What Was Left Out of Making a Murderer Episode One</li>
+          <li>Sarah Palin Plays Tina Fey in 30 Rock Spoof You Haven't Been Waiting For</li>
+        </ol>
+      </section>
+      <section id="mid-right-col" class="aside aside-2">
+        <ul class="most-read-right">
+          <li><h4>The 3rd Democratic Debate Showed the Candidates at Their Best</h4><p>Substantive and Classy</p></li>
+          <li><h4>The First Black Trans Model Had Face on a Box of Clairol</h4><p>No one knew Tracey Africa's secret. Until they did.</p></li>
+          <li><h4>The 2016 Election and the Death Throes of White Male Power</h4><p>Real rage is brewing over big demographic changes.</p></li>
+          <li><h4>This 116-Year-Old Brooklyn Woman Is the World's Oldest Person</h4><p>Born on July 6, 1899.</p></li>         
+        </ul>
+      </section>
+    </section>
+  </body>
 
-    <div id="right-col" class="aside aside-2">
-      <ul class="stories">
-        <li class="right-col-item"><h4>Why Everyone (in Congress) Hates Ted Cruz</h4><p>Even GOP colleagues can't stand him.</p></li>
-        <li class="right-col-item"><h4>The Critics</h4><p>The 10 Best Lists of 2015</p><p>Applauding Mann's <em>Heat</em></p></li>
-      </ul>
-      <div class="ad-slot">
-        AD SLOT<br>
-        300x600
-      </div>
-      <div class="subscribe">
-        <p class="subscribe-headline">Subscribe Today</p>
-        <p>Get the latest issue, plus the best of nymag.com in our all-in-one iPad app.</p>
-      </div>
-    </div>
-
-  </section>
-</body>
-
-<footer class="footer">
-  things
-</footer>
+  <footer class="footer">
+  </footer>
 
 </html>
